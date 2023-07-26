@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Assignment2_div"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:padding="50dp"
+    android:gravity="center"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Division"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        />
+    <EditText
+        android:id="@+id/et_num1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number 1 Here"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/et_num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number 2 Here"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Divide"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/tv_Output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

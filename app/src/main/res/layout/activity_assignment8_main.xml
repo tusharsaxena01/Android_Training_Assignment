@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Assignment8_main">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/fragMain"
+            app:layout_constraintBottom_toTopOf="@id/btnAdd"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAdd"
+            android:text="Add"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btnDiv"
+            app:layout_constraintEnd_toStartOf="@id/btnSub"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSub"
+            android:text="Sub"
+            app:layout_constraintStart_toEndOf="@id/btnAdd"
+            app:layout_constraintEnd_toStartOf="@id/btnMul"
+            app:layout_constraintBottom_toTopOf="@id/btnDiv"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMul"
+            android:text="Mul"
+            app:layout_constraintStart_toEndOf="@id/btnSub"
+            app:layout_constraintBottom_toTopOf="@id/btnDiv"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDiv"
+            android:text="Div"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnMod"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMod"
+            android:text="Mod"
+            app:layout_constraintStart_toEndOf="@id/btnDiv"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
